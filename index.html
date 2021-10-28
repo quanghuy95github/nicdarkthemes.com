@@ -48,67 +48,149 @@
                             <a href="" class="top-nav__link">CONTACT</a>
                         </li>
                         <li class="top-nav__item">
-                            <a href="" class="top-nav__item--book-now top-nav__link btn btn--pink">BOOK NOW</a>
+                            <a href="" class="top-nav__link btn btn--pink top-nav__item--book-now">BOOK NOW</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="nav-right-button">
+                <label for="nav-right-button" class="nav-right-button">
                     <img src="./assets/images/menu.png" alt="" class="nav-right-bar__img">
-                </div>
+                </label>
+                <input type="checkbox" hidden id="nav-right-button" class="nav-right__input-check-box">
                 <div class="nav-right">
-                    <div class="nav-right__close">
-                        <img src="./assets/images/error.png" alt="" class="nav-right__close-img">
-                    </div>
-                    <div class="nav-right__component">
-                        <p class="nav-right__component-heading">Best</p>
-                        <p class="nav-right__component-title"><span>Packages</span></p>
-                        <ul class="nav-right__list">
-                            <li class="nav-right__item">
-                                <div class="nav-right__item-info">
-                                    <div class="nav-right__img-wrap">
-                                        <img src="./assets/images/right-bar/package-1-150x150.jpg" alt="" class="nav-right__item-img">
+                    <div class="nav-right-wrap">
+                        <label for="nav-right-button" class="nav-right__close">
+                            <img src="./assets/images/error.png" alt="" class="nav-right__close-img">
+                        </label>
+
+                        <!--component right-->
+                        <div class="nav-right__component">
+                            <p class="nav-right__component-heading">Best</p>
+                            <p class="nav-right__component-title"><span>Packages</span></p>
+                            <ul class="nav-right__list">
+                                <li class="nav-right__item">
+                                    <div class="nav-right__item-info">
+                                        <div class="nav-right__img-wrap">
+                                            <img src="./assets/images/right-bar/package-1-150x150.jpg" alt="" class="nav-right__item-img">
+                                        </div>
+                                        <div class="nav-right__item-content">
+                                            <h3 class="nav-right__item-name">Berlin</h3>
+                                            <a href="" class="nav-right__item-address">
+                                                <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
+                                                <span class="nav-right__item-text-add">Europe</span>
+                                            </a>
+                                            <button class="nav-right__item-btn btn btn--yellow">FROM 700 $</button>
+                                        </div>
                                     </div>
-                                    <div class="nav-right__item-content">
-                                        <h3 class="nav-right__item-name">Berlin</h3>
-                                        <a href="" class="nav-right__item-address">
-                                            <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
-                                            <span class="nav-right__item-text-add">Europe</span>
-                                        </a>
-                                        <button class="btn">FROM 700 $</button>
+                                </li>
+                                <li class="nav-right__item">
+                                    <div class="nav-right__item-info">
+                                        <div class="nav-right__img-wrap">
+                                            <img src="./assets/images/right-bar/package-2-150x150.jpg" alt="" class="nav-right__item-img">
+                                        </div>
+                                        <div class="nav-right__item-content">
+                                            <h3 class="nav-right__item-name">Hong Kong</h3>
+                                            <a href="" class="nav-right__item-address">
+                                                <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
+                                                <span class="nav-right__item-text-add">Asia</span>
+                                            </a>
+                                            <button class="nav-right__item-btn btn btn--orange">FROM 500 $</button>
+                                        </div>
                                     </div>
+                                </li>
+                                <li class="nav-right__item">
+                                    <div class="nav-right__item-info">
+                                        <div class="nav-right__img-wrap">
+                                            <img src="./assets/images/right-bar/package-3-150x150.jpg" alt="" class="nav-right__item-img">
+                                        </div>
+                                        <div class="nav-right__item-content">
+                                            <h3 class="nav-right__item-name">San Francisco</h3>
+                                            <a href="" class="nav-right__item-address">
+                                                <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
+                                                <h5 class="nav-right__item-text-add">United States</h5>
+                                            </a>
+                                            <button class="nav-right__item-btn btn btn--line-pink">FROM 400 $</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--destination-->
+                        <div class="destination destination-nav-right"
+                             style="background-image:  linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%) ,
+                             url('./assets/images/destination/destination-9.jpg');">
+                            <div class="destination-wrap">
+                                <div class="destination-img-wrap">
+                                    <img src="./assets/images/destination/arch.png" alt="" class="destination-img">
                                 </div>
-                            </li>
-                            <li class="nav-right__item">
-                                <div class="nav-right__item-info">
-                                    <div class="nav-right__img-wrap">
-                                        <img src="./assets/images/right-bar/package-2-150x150.jpg" alt="" class="nav-right__item-img">
-                                    </div>
-                                    <div class="nav-right__item-content">
-                                        <h3 class="nav-right__item-name">Hong Kong</h3>
-                                        <a href="" class="nav-right__item-address">
-                                            <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
-                                            <span class="nav-right__item-text-add">Asia</span>
-                                        </a>
-                                        <button class="btn">FROM 500 $</button>
-                                    </div>
+                                <div class="destination-region">
+                                    <h3 class="destination-region__name">Europe</h3>
+                                    <h6 class="destination-region__num-package">3 Package</h6>
                                 </div>
-                            </li>
-                            <li class="nav-right__item">
-                                <div class="nav-right__item-info">
-                                    <div class="nav-right__img-wrap">
-                                        <img src="./assets/images/right-bar/package-3-150x150.jpg" alt="" class="nav-right__item-img">
+
+                                <div class="destination-info">
+                                    <h3 class="destination-info__heading">Packages</h3>
+                                    <div class="destination-info__places">
+                                        <a href="" class="destination-info__places-item">Berlin</a>
+                                        <a href="" class="destination-info__places-item">Amsterdam</a>
+                                        <a href="" class="destination-info__places-item">Tuscany</a>
                                     </div>
-                                    <div class="nav-right__item-content">
-                                        <h3 class="nav-right__item-name">San Francisco</h3>
-                                        <a href="" class="nav-right__item-address">
-                                            <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
-                                            <span class="nav-right__item-text-add">United States</span>
-                                        </a>
-                                        <button class="btn">FROM 400 $</button>
-                                    </div>
+                                    <a href="" class="btn destination-info__btn">View Destination</a>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+
+                        <div class="nav-right__component">
+                            <p class="nav-right__component-heading">Last</p>
+                            <p class="nav-right__component-title"><span>Minutes</span></p>
+                            <ul class="nav-right__list">
+                                <li class="nav-right__item">
+                                    <div class="nav-right__item-info">
+                                        <div class="nav-right__img-wrap">
+                                            <img src="./assets/images/right-bar/package-4-150x150.jpg" alt="Tuscany" class="nav-right__item-img">
+                                        </div>
+                                        <div class="nav-right__item-content">
+                                            <h3 class="nav-right__item-name">Tuscany</h3>
+                                            <a href="" class="nav-right__item-address">
+                                                <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
+                                                <span class="nav-right__item-text-add">Italy</span>
+                                            </a>
+                                            <button class="nav-right__item-btn btn btn--yellow">FROM 730 $</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-right__item">
+                                    <div class="nav-right__item-info">
+                                        <div class="nav-right__img-wrap">
+                                            <img src="./assets/images/right-bar/package-5-150x150.jpg" alt="Amsterdam" class="nav-right__item-img">
+                                        </div>
+                                        <div class="nav-right__item-content">
+                                            <h3 class="nav-right__item-name">Amsterdam</h3>
+                                            <a href="" class="nav-right__item-address">
+                                                <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
+                                                <span class="nav-right__item-text-add">Netherlands</span>
+                                            </a>
+                                            <button class="nav-right__item-btn btn btn--orange">FROM 1500 $</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-right__item">
+                                    <div class="nav-right__item-info">
+                                        <div class="nav-right__img-wrap">
+                                            <img src="./assets/images/right-bar/package-6-150x150.jpg" alt="Phuketco" class="nav-right__item-img">
+                                        </div>
+                                        <div class="nav-right__item-content">
+                                            <h3 class="nav-right__item-name">Phuketco</h3>
+                                            <a href="" class="nav-right__item-address">
+                                                <img src="./assets/images/right-bar/icon-pin-grey.png" alt="" class="nav-right__item-icon">
+                                                <h5 class="nav-right__item-text-add">Thailandia</h5>
+                                            </a>
+                                            <button class="nav-right__item-btn btn btn--line-pink">FROM 1200 $</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
