@@ -19,6 +19,11 @@ html {
     font-size: 62.5%;
     line-height: 2.7rem;
     box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.mt-76 {
+    margin-top: 76px;
 }
 
 .btn {
@@ -36,6 +41,11 @@ html {
     cursor: pointer;
     text-transform: uppercase;
     justify-content: center;
+}
+
+.btn.btn--medium {
+    padding: 10px 35px 8px;
+    border-radius: 22px;
 }
 
 .btn.btn--pink {
@@ -60,9 +70,18 @@ html {
     background: -moz-linear-gradient(left, #ba71da 0%, #da717b 100%);
 }
 
+.btn.btn--white {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.btn.btn--green {
+    background-color: #1bbc9b;
+}
 
 .heading--underline {
     position: relative;
+    z-index: 1;
 }
 
 .heading--underline::after {
