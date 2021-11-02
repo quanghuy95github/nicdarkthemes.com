@@ -48,6 +48,11 @@ html {
     border-radius: 22px;
 }
 
+.btn.btn--sm-medium {
+    padding: 6px 35px 5px;
+    border-radius: 22px;
+}
+
 .btn.btn--pink {
     background-color: #ba71da;
 }
