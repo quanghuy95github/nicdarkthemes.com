@@ -9,9 +9,13 @@
     }
 }
 
+
+
+
 /*meduim pc*/
 @media (max-width: 1200px) {
     :root {
+        --header-height: 1489px;
         --header-top-height: 125px;
     }
     .hidden-block {
@@ -45,10 +49,76 @@
         width: 160px;
     }
 
+    .header-with-search {
+        padding: 270px 40px 200px;
+    }
+    .header-search {
+        flex: 1;
+    }
+
+    .type-travel__item-wrap,
+    .type-travel__component,
+    .type-travel__item,
+    .header-search__select,
+    .view-package__title,
+    .view-package__action {
+        width: 100%;
+    }
+
+    .type-travel__item-wrap {
+        margin-bottom: 30px;
+    }
+
+    .type-travel__item {
+        height: 105px;
+    }
+
+    .tour-grid,
+    .destination-section-wide {
+        width: 90%;
+    }
+
+    .view-package {
+        height: 321px;
+    }
+
+    .view-package__title {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .view-package__inner {
+        flex-direction: column;
+    }
+
+    .view-package__action-btn {
+        margin: auto;
+    }
+
+    .tour__slide-wrap {
+        padding: 40px 15px 0 15px;
+    }
+
+
 }
 
+@media (max-width: 750px) {
+    .destination-section-wide {
+        width: 62%;
+    }
 
+    .tour-grid {
+        width: 70%;
+    }
 
+    .tour__slide {
+        height: 231px;
+    }
+
+    .tour__slide-times-wrap {
+        margin-top: -6px;
+    }
+}
 
 
 

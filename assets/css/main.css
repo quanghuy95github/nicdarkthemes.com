@@ -13,6 +13,10 @@
 *   3.2 footer-content
 */
 
+.app {
+    overflow: hidden;
+}
+
 .header {
     height: var(--header-height);
     background-image: linear-gradient(0, rgba(101,100,96,0.2), rgba(101,100,96,0.2)), url('../images/parallax-2.jpg');
@@ -409,6 +413,7 @@
 
 .type-travel__label {
     font-size: 1.1rem;
+    line-height: 1.1rem;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 2px;
@@ -488,10 +493,14 @@
 
 .view-package__text-top {
     margin: 0;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
 }
 
 .view-package__text-bottom {
-    margin: 10px 0 0;
+    margin: 0px 0 0;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
 }
 
 .view-package__text-bottom .heading--underline::after {
@@ -598,6 +607,7 @@
     height: 100%;
     background-size: cover;
     background-position: center ;
+    background-repeat: no-repeat;
 }
 
 
