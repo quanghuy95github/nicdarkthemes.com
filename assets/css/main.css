@@ -1052,3 +1052,74 @@
     letter-spacing: 2px;
 }
 
+/*buy now*/
+.buy-now__wrap {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 5;
+}
+
+.buy-now__content {
+    position: relative;
+}
+
+.buy-now__link {
+    height: 65px;
+    width: 65px;
+    display: flex;
+    background-color: var(--heading-text-color);
+    color: var(--white-color);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 100%;
+    position: relative;
+}
+
+.buy-now__price {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.buy-now__unit {
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    font-size: 8px;
+}
+
+.buy-now__label {
+    background-color: #f76570;
+    color: var(--white-color);
+    position: absolute;
+    top: 0;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding: 3px 5px;
+}
+
+.buy-now__symbol {
+    background-color: var(--heading-text-color);
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    border-radius: 100%;
+}
+
+.buy-now__img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 15px;
+    height: 15px;
+}
+
