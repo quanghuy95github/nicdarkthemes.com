@@ -73,9 +73,10 @@
 }
 
 .nav-right-button {
-    height: 24px;
+    height: 25px;
     margin-left: auto;
     cursor: pointer;
+    margin-top: -4px;
 }
 
 .nav-right__input-check-box:checked ~ .nav-right {
