@@ -1,0 +1,63 @@
+/*high pc*/
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .top-nav__item:first-child .top-nav__link {
+        padding-left: 15px;
+    }
+
+    .top-nav__link {
+        padding: 15px;
+    }
+}
+
+/*meduim pc*/
+@media (max-width: 1200px) {
+    :root {
+        --header-top-height: 125px;
+    }
+    .hidden-block {
+        display: none;
+    }
+
+    .nav-right-button-mobile {
+        display: inline-block;
+    }
+
+    .header-top {
+        background-color: var(--heading-text-color);
+        display: block;
+        padding: 15px 0;
+    }
+
+    .header-logo-nav-top {
+        width: 100%;
+    }
+
+    .header-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-logo__link {
+        width: 100%;
+    }
+
+    .header-logo__img {
+        width: 160px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

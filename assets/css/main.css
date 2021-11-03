@@ -43,7 +43,7 @@
 }
 
 .top-nav {
-
+    padding: 0 15px;
 }
 
 .top-nav__list {
@@ -57,11 +57,15 @@
     display: flex;
 }
 
+.top-nav__item:first-child .top-nav__link {
+    padding-left: 0;
+}
+
 .top-nav__link {
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--white-color);
-    padding: 15px 26px;
+    padding: 15px 25px;
     letter-spacing: 2px;
     font-weight: 400;
     line-height: 1.4rem;
@@ -79,7 +83,8 @@
     margin-top: -4px;
 }
 
-.nav-right__input-check-box:checked ~ .nav-right {
+.nav-right__input-check-box:checked ~ .nav-right,
+.nav-right-mobile__input-check-box:checked ~ .nav-right-mobile-wrap {
     right: 0px;
 }
 
@@ -87,6 +92,7 @@
     height: 100%;
 }
 
+.nav-right-mobile-wrap,
 .nav-right {
     background-color: var(--white-color);
     width: 350px;
@@ -225,6 +231,71 @@
 .destination-nav-right {
     margin: 40px 0;
 }
+
+/* mobile sub menu */
+.nav-right-mobile-button {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.nav-right-button-mobile {
+    display: none;
+    height: 25px;
+    cursor: pointer;
+}
+
+.nav-right-mobile-wrap {
+    background-color: var(--heading-text-color);
+    width: 300px;
+    text-align: left;
+    padding: 40px;
+}
+
+.nav-right-mobile-wrap .nav-right-wrap {
+    padding: 0;
+}
+
+.nav-right-mobile-wrap .nav-right__close {
+    top: 13px;
+    right: 17px;
+}
+
+.mobile-nav-card {
+    margin-bottom: 30px;
+}
+
+.nav-right-mobile__heading {
+    font-size: 2.4rem;
+    line-height: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.mobile-nav-card__list,
+.mobile-nav-card__sub-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: none;
+}
+.mobile-nav-card__list {
+    margin-top: 6px;
+}
+
+.mobile-nav-card__link {
+    font-weight: 400;
+    line-height: 3.5rem;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.mobile-nav-card__sub-list {
+    padding-left: 20px;
+}
+
 
 /*header-body*/
 .header-body {

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div class="app">
@@ -19,40 +20,51 @@
         <!--header-->
         <div class="header">
             <div class="header-top">
-                <div class="header-logo">
-                    <a href="" class="header-logo__link">
-                        <img src="./assets/images/logo.png" alt="" class="header-logo__img">
-                    </a>
+                <div class="header-logo-nav-top">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col l-2 m-12 c-12">
+                                <div class="header-logo">
+                                    <a href="" class="header-logo__link">
+                                        <img src="./assets/images/logo.png" alt="" class="header-logo__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l-10 m-0 c-0">
+                                <nav class="top-nav">
+                                    <ul class="top-nav__list hidden-block">
+                                        <li class="top-nav__item">
+                                            <a href="" class="top-nav__link">HOME</a>
+                                        </li>
+                                        <li class="top-nav__item">
+                                            <a href="" class="top-nav__link">PACKAGES</a>
+                                        </li>
+                                        <li class="top-nav__item">
+                                            <a href="" class="top-nav__link">SHOP</a>
+                                        </li>
+                                        <li class="top-nav__item">
+                                            <a href="" class="top-nav__link">ABOUT US</a>
+                                        </li>
+                                        <li class="top-nav__item">
+                                            <a href="" class="top-nav__link">PAGES</a>
+                                        </li>
+                                        <li class="top-nav__item">
+                                            <a href="" class="top-nav__link">NEWS</a>
+                                        </li>
+                                        <li class="top-nav__item">
+                                            <a href="" class="top-nav__link">CONTACT</a>
+                                        </li>
+                                        <li class="top-nav__item">
+                                            <a href="" class="top-nav__link btn btn--pink top-nav__item--book-now">BOOK NOW</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <nav class="top-nav">
-                    <ul class="top-nav__list">
-                        <li class="top-nav__item">
-                            <a href="" class="top-nav__link">HOME</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="" class="top-nav__link">PACKAGES</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="" class="top-nav__link">SHOP</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="" class="top-nav__link">ABOUT US</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="" class="top-nav__link">PAGES</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="" class="top-nav__link">NEWS</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="" class="top-nav__link">CONTACT</a>
-                        </li>
-                        <li class="top-nav__item">
-                            <a href="" class="top-nav__link btn btn--pink top-nav__item--book-now">BOOK NOW</a>
-                        </li>
-                    </ul>
-                </nav>
-                <label for="nav-right-button" class="nav-right-button">
+                <!--nav bar right high pc-->
+                <label for="nav-right-button" class="nav-right-button hidden-block">
                     <img src="./assets/images/menu.png" alt="" class="nav-right-bar__img">
                 </label>
                 <input type="checkbox" hidden id="nav-right-button" class="nav-right__input-check-box">
@@ -192,6 +204,189 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--nav bar mobile-->
+                <!--nav bar right high pc-->
+                <div class="nav-right-mobile-button">
+                    <label for="nav-right-mobile" class="nav-right-button-mobile">
+                        <img src="./assets/images/menu.png" alt="" class="nav-right-bar__img">
+                    </label>
+                    <input type="checkbox" hidden id="nav-right-mobile" class="nav-right-mobile__input-check-box">
+                    <div class="nav-right-mobile-wrap">
+                        <div class="nav-right-wrap">
+                            <label for="nav-right-mobile" class="nav-right__close">
+                                <img src="./assets/images/icon-close-white.svg" alt="" class="nav-right__close-img">
+                            </label>
+
+                            <div class="mobile-nav-card">
+                                <h2 class="nav-right-mobile__heading">home</h2>
+                            </div>
+                            <div class="mobile-nav-card">
+                                <h2 class="nav-right-mobile__heading">Packages</h2>
+                                <ul class="mobile-nav-card__list">
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Search 1</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Search 2</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Tour Package</a>
+                                        <ul class="mobile-nav-card__sub-list">
+                                            <li class="mobile-nav-card__item">
+                                                <a href="" class="mobile-nav-card__link">Carousel</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href="" class="mobile-nav-card__link">Custom Map</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href=""class="mobile-nav-card__link">360° Panorama</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href=""class="mobile-nav-card__link">Default</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Destination</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Typology</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile-nav-card">
+                                <h2 class="nav-right-mobile__heading">Shop</h2>
+                                <ul class="mobile-nav-card__list">
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Archive</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Single product</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Cart</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">checkout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile-nav-card">
+                                <h2 class="nav-right-mobile__heading">About us</h2>
+                                <ul class="mobile-nav-card__list">
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">About us</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">About us 2</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">About us 3</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile-nav-card">
+                                <h2 class="nav-right-mobile__heading">Pages</h2>
+                                <ul class="mobile-nav-card__list">
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Services</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Agency tours</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Testimonials</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Prices</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Promotions</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Faq</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Coming Soon</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">About Us</a>
+                                        <ul class="mobile-nav-card__sub-list">
+                                            <li class="mobile-nav-card__item">
+                                                <a href="" class="mobile-nav-card__link">About Us 1</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href="" class="mobile-nav-card__link">About Us 2</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href=""class="mobile-nav-card__link">About Us 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Contact</a>
+                                        <ul class="mobile-nav-card__sub-list">
+                                            <li class="mobile-nav-card__item">
+                                                <a href="" class="mobile-nav-card__link">Contact 1</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href="" class="mobile-nav-card__link">Contact 2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile-nav-card">
+                                <h2 class="nav-right-mobile__heading">Packages</h2>
+                                <ul class="mobile-nav-card__list">
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Achive</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Single post</a>
+                                        <ul class="mobile-nav-card__sub-list">
+                                            <li class="mobile-nav-card__item">
+                                                <a href="" class="mobile-nav-card__link">Full Width</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href="" class="mobile-nav-card__link">Right Sidebar</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href=""class="mobile-nav-card__link">360° Panorama</a>
+                                            </li>
+                                            <li class="mobile-nav-card__item">
+                                                <a href=""class="mobile-nav-card__link">Left Sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Destination</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Typology</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mobile-nav-card">
+                                <h2 class="nav-right-mobile__heading">Contact</h2>
+                                <ul class="mobile-nav-card__list">
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Contact 1</a>
+                                    </li>
+                                    <li class="mobile-nav-card__item">
+                                        <a href="" class="mobile-nav-card__link">Contact 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="mobile-nav-card">
+                                <h2 class="nav-right-mobile__heading">Book Now</h2>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
