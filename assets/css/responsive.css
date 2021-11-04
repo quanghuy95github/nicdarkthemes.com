@@ -50,7 +50,7 @@
     }
 
     .header-with-search {
-        padding: 270px 40px 200px;
+        padding: 270px 0 200px;
     }
     .header-search {
         flex: 1;
@@ -61,7 +61,9 @@
     .type-travel__item,
     .header-search__select,
     .view-package__title,
-    .view-package__action {
+    .view-package__action,
+    .contact-label__inner,
+    .contact-form {
         width: 100%;
     }
 
@@ -99,15 +101,44 @@
         padding: 40px 15px 0 15px;
     }
 
-
-}
-
-@media (max-width: 750px) {
-    .destination-section-wide {
-        width: 62%;
+    .contact {
+        flex-direction: column;
     }
 
-    .tour-grid {
+    .contact-form-wrap {
+        margin-top: 60px;
+    }
+
+    .contact-form {
+        padding: 0;
+        display: flex;
+    }
+
+    .btn.contact-form__btn {
+        flex: 1;
+    }
+
+    .contact-label__wrap {
+        justify-content: flex-start;
+    }
+
+    .footer-summary {
+        margin-bottom: 20px;
+    }
+
+    .footer-list-wrap {
+        padding: 0 15px 0 25px;
+    }
+
+    .footer-authen {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 942px) {
+    .tour-grid,
+    .destination-section-wide {
         width: 70%;
     }
 
@@ -118,8 +149,82 @@
     .tour__slide-times-wrap {
         margin-top: -6px;
     }
+
+
 }
 
+@media (max-width: 750px) {
+
+    .header-with-search {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .header-search__select {
+        min-width: unset;
+    }
+
+    .destination-section-wide {
+        width: 62%;
+    }
+
+    .tour__intro-title,
+    .tour__intro-subject {
+        text-align: center;
+    }
+
+    .promotions-grid,
+    .tour-grid {
+        width: 70%;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .destination-section-wide {
+        width: 75%;
+    }
+
+    .tour__slide-times {
+        flex-direction: column;
+    }
+
+    .tour__slide-time-item {
+        width: 100%;
+    }
+
+    .tour__intro {
+        padding: 0;
+    }
+
+    .tour__intro-desc {
+        text-align: justify;
+    }
+    .tour__slide-wrap {
+        padding: 40px 0 0;
+    }
+
+    .footer {
+        padding: 80px 50px;
+    }
+
+    .contact-form {
+        flex-direction: column;
+    }
+
+    .contact-form__group--email {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .btn.contact-form__btn {
+        margin-top: 20px;
+    }
+}
 
 
 

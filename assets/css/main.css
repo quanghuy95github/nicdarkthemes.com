@@ -443,7 +443,7 @@
     font-size: 3.6rem;
     line-height: 3.6rem;
     color: var(--heading-text-color);
-    margin: 16px 0 26px;
+    margin: 16px 0 22px;
 }
 
 .destination-section__subject-high-text::after {
@@ -538,9 +538,10 @@
 }
 
 .tour__intro-subject {
-    font-size: 36px;
+    font-size: 3.6rem;
     color: var(--heading-text-color);
     margin: 20PX 0 34PX;
+    line-height: 3.6rem;
 }
 
 .tour__intro-subject .heading--underline:after {
@@ -737,17 +738,16 @@
 
 .discover-wrap {
     margin-top: 80px;
-    height: 270px;
     display: flex;
+    flex-direction: column;
 }
 
 .discover-inner {
+    height: 270px;
     flex: 1;
-    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
 }
 
 .discover {
@@ -783,6 +783,7 @@
 
 .promotions-item {
     border: 1px solid #f1f1f1;
+    margin-top: 30px;
 }
 
 .promotions-item__place {
@@ -1006,10 +1007,6 @@
     padding: 0 15px;
 }
 
-.contact-form__group {
-
-}
-
 .contact-form__group--email {
     width: 75%;
     padding-right: 20px;
@@ -1168,7 +1165,7 @@
     position: absolute;
     top: 8px;
     left: 11px;
-    font-size: 8px;
+    font-size: 0.8rem;
 }
 
 .buy-now__label {
